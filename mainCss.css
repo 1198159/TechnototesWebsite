@@ -1,13 +1,9 @@
-/*
-#66b9bf - light blue
-#07889b - teal
-#e37222 - orange
-#eeaa7b - light orange
-*/
+@import "palette.scss";
+
 body {
+	height: 100%;
 	color: black;
-	background-image: repeating-linear-gradient(to bottom right, #006800, #002000);
-	/*background: linear-gradient(green, black);*/
+	background: #84cae7;
 	font: 15px arial, sans-serif;
 }
 
@@ -16,26 +12,27 @@ body {
 	border-radius: 5px;
 	border-bottom-left-radius: 30px;
 	padding: 5px;
-	background-color: #006900;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(#22aaa1, #4ce0d2 15%);
 }
 
 #navigation td {
-	background-color: #e37222;
+	background-color: #136f63;
 	border-radius: 5px;
 }
 
 #navigation td:hover {
-	background-color: #eeaa7b;
+	background-color: #22aaa1;
 }
 
 a:link {
 	text-decoration: none;
-	color: #e37222;
+	color: #22aaa1;
 }
 
 a:visited {
 	text-decoration: none;
-	color: #777777;
+	color: #136f63;
 }
 
 .nav:link {
@@ -47,13 +44,13 @@ a:visited {
 }
 
 #side {
+	height: 100%;
 	width: 18%;
 	float: left;
-	height: 100%;
 }
 
 #info {
+	height: 100%;
 	width: 78%;
 	float: right;
-	height: 100%;
 }
