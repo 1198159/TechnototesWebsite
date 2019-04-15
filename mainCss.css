@@ -8,7 +8,7 @@ body>* {
 	background-color: #333333;
 }
 
-header {
+.content {
 	border: 5px solid black;
 	border-radius: 5px;
 	border-bottom-left-radius: 30px;
@@ -25,5 +25,19 @@ header {
 }
 
 a:link {
-	text-decoration: none
+	text-decoration: none;
+	color: #777777;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #777777;
+}
+
+.nav:link {
+	color: black;
+}
+
+.nav:visited {
+	color: black;
 }
