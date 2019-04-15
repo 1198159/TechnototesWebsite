@@ -12,12 +12,18 @@ header {
 	border: 5px solid black;
 	border-radius: 5px;
 	border-bottom-left-radius: 30px;
-	
 	padding: 5px;
 }
-#navigation td{
-	background-color:#444444;
+
+#navigation td {
+	background-color: #444444;
+	border-radius: 5px;
 }
-#navigation td:hover{
-	background-color:#666666;
+
+#navigation td:hover {
+	background-color: #666666;
+}
+
+a:link {
+	text-decoration: none
 }
