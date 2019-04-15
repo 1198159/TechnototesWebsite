@@ -1,6 +1,13 @@
+/*
+#66b9bf - light blue
+#07889b - teal
+#e37222 - orange
+#eeaa7b - light orange
+*/
 body {
 	color: black;
-	background-color: #555555;
+	background-image: repeating-linear-gradient(to bottom right, #006800, #002000);
+	/*background: linear-gradient(green, black);*/
 	font: 15px arial, sans-serif;
 }
 
@@ -9,21 +16,21 @@ body {
 	border-radius: 5px;
 	border-bottom-left-radius: 30px;
 	padding: 5px;
-	background-color: #333333;
+	background-color: #006900;
 }
 
 #navigation td {
-	background-color: #444444;
+	background-color: #e37222;
 	border-radius: 5px;
 }
 
 #navigation td:hover {
-	background-color: #666666;
+	background-color: #eeaa7b;
 }
 
 a:link {
 	text-decoration: none;
-	color: #777777;
+	color: #e37222;
 }
 
 a:visited {
