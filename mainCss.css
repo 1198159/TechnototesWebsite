@@ -4,15 +4,12 @@ body {
 	font: 15px arial, sans-serif;
 }
 
-body>* {
-	background-color: #333333;
-}
-
 .content {
 	border: 5px solid black;
 	border-radius: 5px;
 	border-bottom-left-radius: 30px;
 	padding: 5px;
+	background-color: #333333;
 }
 
 #navigation td {
@@ -40,4 +37,16 @@ a:visited {
 
 .nav:visited {
 	color: black;
+}
+
+#side {
+	width: 18%;
+	float: left;
+	height: 100%;
+}
+
+#info {
+	width: 78%;
+	float: right;
+	height: 100%;
 }
