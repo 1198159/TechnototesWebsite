@@ -1,24 +1,40 @@
-@import "palette.scss";
-
-body {
+/*body {
 	height: 100%;
 	color: black;
-	background: #84cae7;
 	font: 15px arial, sans-serif;
+	margin: 0;
+}
+
+.header {
+	background-color: #59596a;
+	padding: 10px 16px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+
+.sticky+.content {
+	padding-top: 102px;
 }
 
 .content {
+	postition: fixed;
 	border: 5px solid black;
 	border-radius: 5px;
 	border-bottom-left-radius: 30px;
 	padding: 5px;
 	background-repeat: no-repeat;
 	background-image: linear-gradient(#22aaa1, #4ce0d2 15%);
+	margin: 5px;
 }
 
 #navigation td {
 	background-color: #136f63;
 	border-radius: 5px;
+	text-align: center;
 }
 
 #navigation td:hover {
@@ -54,3 +70,8 @@ a:visited {
 	width: 78%;
 	float: right;
 }
+
+#main {
+	top: 15%;
+	position: absolute;
+}*/
