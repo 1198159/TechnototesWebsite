@@ -1,14 +1,14 @@
-let dropdownUp = false;
-
-$(document).ready(function() {
-
-	$('#hide').click(function() {
-		if (!dropdownUp) {
-			$('#dropdown').css("display", "none");
-		} else {
-			$('#dropdown').css("display", "initial");
-		}
-		dropdownUp = !dropdownUp;
-	});
-
-});
+//let dropdownUp = false;
+//
+//$(document).ready(function() {
+//
+//	$('#menuIcon').click(function() {
+//		if (!dropdownUp) {
+//			$("#dropdownMenu").css("height","0px");
+//		} else {
+//			$("#dropdownMenu").css("height","52px");
+//		}
+//		dropdownUp = !dropdownUp;
+//	});
+//
+//});
