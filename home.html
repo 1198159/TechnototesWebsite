@@ -62,7 +62,13 @@
 		</div>
 	</div>
 	<iframe src="./test.txt" id="jsonBlog"></iframe>
-	<iframe src="./blog/blogTexts/blog4.24.19.txt">
-	</iframe>
+	<iframe src="./blog/blogTexts/blog4.24.19.txt"> </iframe>
+
+	<script type="text/javascript">
+		$().ready(function() {
+			$("#jsonTest").text(blogInfo);
+		});
+	</script>
+	<div id="jsonTest"></div>
 </body>
 </html>
