@@ -13,7 +13,7 @@ fetch("./blog/blogIndex.txt").then(function(a) {
         return;
     }
     a.text().then(function(a) {
-    	blogInfo = a;
+    	blogInfo = JSON.parse(a);
         alert(blogInfo);
     });
 }).catch(function(a) {

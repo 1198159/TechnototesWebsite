@@ -1,4 +1,4 @@
-var blogInfo = "{
+{
   'blogs': [
     {
       'title': 'My First Blog, 4/24/19',
@@ -7,4 +7,4 @@ var blogInfo = "{
       'date':'4 24 19'
     }
   ]
-}";
+}
