@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 var blogInfo;
 
-fetch("./blog/blogIndex.txt").then(function(a) {
+fetch("./blog/blogIndex.json").then(function(a) {
     if (200 !== a.status) {
         alert("Looks like there was a problem. Status Code: " + a.status);
         return;
