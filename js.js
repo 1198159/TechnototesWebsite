@@ -12,7 +12,7 @@ fetch("./blog/blogIndex.txt").then(function(a) {
         alert("Looks like there was a problem. Status Code: " + a.status);
         return;
     }
-    a.json().then(function(a) {
+    a.text().then(function(a) {
     	blogInfo = a;
         alert(blogInfo);
     });
