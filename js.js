@@ -15,7 +15,7 @@ $(document).ready(function() {
 	});
 	
 	$(window).resize(function(){
-		if($(window).width() > 720){
+		if($(window).width() > 1000){
 			$('.dropdownItem:not(#hideDrop)').css("display","inline");
 		}
 	  });

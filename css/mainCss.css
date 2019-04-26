@@ -4,8 +4,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: arial;
+	font-size: 1em;
 }
-
 /* Start of Header*/
 .header {
 	background: #363639;
@@ -67,16 +67,17 @@ li .aNo:visited {
 	justify-content: space-evenly;
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:1000px) {
 	#dropdown {
-		padding-top: 0px;
-		flex-direction: column;
-		height: 11em;
-		justify-content: flex-start;
+		padding-top:0px;
+		flex-direction:column;	
+		height:11em;	
+		justify-content:flex-start;
 	}
-	.dropdownUp {
-		height: 1.5em !important;
-		background: green;
+	
+	.dropdownUp{
+		height:1.5em !important;
+		background:green;
 	}
 }
 
@@ -95,31 +96,34 @@ li .aNo:visited {
 	height: 1.3em;
 }
 
-#hideDrop {
-	display: none;
+#hideDrop{
+	display:none;
 }
 
-#hideDrop img {
-	height: 1.3em;
+#hideDrop img{
+		height:1.3em;
+	}
+@media screen and (max-width:1000px) {
+	.dropdownItem:not(#currentTab){
+		position:relative;
+		right:1em;
+		width:100%;
+		text-align:center;
+	}
+	#currentTab{
+		position:relative;
+		right:1em;
+		width:100%;
+		text-align:center;
+	}
+		
+	#hideDrop{
+		display:inline;
+	}
+	
+
 }
 
-@media screen and (max-width:720px) {
-	.dropdownItem:not (#currentTab ){
-		position: relative;
-		right: 1em;
-		width: 100%;
-		text-align: center;
-	}
-	#currentTab {
-		position: relative;
-		right: 1em;
-		width: 100%;
-		text-align: center;
-	}
-	#hideDrop {
-		display: inline;
-	}
-}
 
 /*nav menu end*/
 #menuIcon {
