@@ -47,7 +47,7 @@ li .aNo {
 li .aNo:visited {
 	color: white;
 }
-
+/*nav menu Start*/
 #dropdownMenu {
 	width: 100%;
 	background-color: black;
@@ -62,13 +62,21 @@ li .aNo:visited {
 	padding-top: 4px;
 	height: 1.5em;
 	padding-bottom: 0px;
-	width: 90%;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+@media screen and (max-width:720px) {
+	#dropdown {
+		padding-top:0px;
+		flex-direction:column;	
+		height:8.6em;	
+		justify-content:flex-start;
+	}
 }
 
 .dropdownItem {
-	left: 0px;
-	float: left;
-	margin-right: 2em;
 	background: black;
 	padding: 10px;
 	height: 1.25em;
@@ -83,9 +91,28 @@ li .aNo:visited {
 	height: 1.3em;
 }
 
+@media screen and (max-width:720px) {
+	.dropdownItem:not(#currentTab){
+		position:relative;
+		right:1em;
+		width:100%;
+		height:5em;
+		text-align:center;
+	}
+	#currentTab{
+		position:relative;
+		right:1em;
+		width:100%;
+		height:5em;
+		text-align:center;
+	}
+
+}
+
+
+/*nav menu end*/
 #menuIcon {
 	height: 2em;
-	float: right;
 	position: relative;
 	top: -2.1em;
 	margin-right: 10px;
@@ -103,14 +130,14 @@ li .aNo:visited {
 
 /* Start of Body*/
 #main {
-	margin: 1%;
-	padding: 0.5%;
+	margin: 10px;
+	padding: 5px;
 	background-color: #999999;
 }
 
 .content {
 	background-color: #777777;
-	padding: 0.75%;
+	padding: 5px;
 }
 
 .contentHeader {
@@ -125,9 +152,9 @@ li .aNo:visited {
 	display: inline-block;
 }
 
-.noShow{
+.noShow {
+	
 }
-
 
 /* End of Body*/
 

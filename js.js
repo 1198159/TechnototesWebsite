@@ -18,7 +18,7 @@ fetch("./blog/blogIndex.json").then(function(a) {
         alert(blogInfo);
     });
 }).catch(function(a) {
-    alert("Fetch Error :-S", a);
+    //alert("Fetch Error :-S", a);
 });
 
 
