@@ -69,10 +69,14 @@ li .aNo:visited {
 
 @media screen and (max-width:720px) {
 	#dropdown {
-		padding-top:0px;
-		flex-direction:column;	
-		height:8.6em;	
-		justify-content:flex-start;
+		padding-top: 0px;
+		flex-direction: column;
+		height: 11em;
+		justify-content: flex-start;
+	}
+	.dropdownUp {
+		height: 1.5em !important;
+		background: green;
 	}
 }
 
@@ -91,24 +95,31 @@ li .aNo:visited {
 	height: 1.3em;
 }
 
-@media screen and (max-width:720px) {
-	.dropdownItem:not(#currentTab){
-		position:relative;
-		right:1em;
-		width:100%;
-		height:5em;
-		text-align:center;
-	}
-	#currentTab{
-		position:relative;
-		right:1em;
-		width:100%;
-		height:5em;
-		text-align:center;
-	}
-
+#hideDrop {
+	display: none;
 }
 
+#hideDrop img {
+	height: 1.3em;
+}
+
+@media screen and (max-width:720px) {
+	.dropdownItem:not (#currentTab ){
+		position: relative;
+		right: 1em;
+		width: 100%;
+		text-align: center;
+	}
+	#currentTab {
+		position: relative;
+		right: 1em;
+		width: 100%;
+		text-align: center;
+	}
+	#hideDrop {
+		display: inline;
+	}
+}
 
 /*nav menu end*/
 #menuIcon {
