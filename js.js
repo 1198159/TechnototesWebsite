@@ -30,7 +30,7 @@ fetch('./blog/blogIndex.json').then(response => {
 }).then(data => {
   // Work with JSON data here
   blogInfo = data;
-  showBlog("blogContent", blogInfo, "new");
+  showBlog("#blogContent", blogInfo, "new");
 }).catch(err => {
   console.log(err);
 });
@@ -51,18 +51,13 @@ let showBlog = (container, info, what) => {
   }
 
   let blogDiv = $(container);
-  let header = $("h3").clone();
-  header.text(blog.title)
-  blogDiv.append(header);
-
-  let blogText;
-
+  blogDiv.append($("h3").clone().text(blog.title));
   fetch(blog.text).then(response => {
     return response.text();
   }).then(data => {
-    console.log(data);
-    blogText = data;
+    return data;
+  }).then(blogText => {
+    let pTag = $("p").clone().text(blogText);
+    $(container).append(pTag);
   });
-
-  $(container).append("<p>" + blogText + "</p>");
 };
