@@ -1,26 +1,29 @@
 #bioImg img {
-	max-height: 10em;
+  max-height: 10em;
 }
 
 #bioImg {
-	text-align: center;
-	width: 30%;
+  text-align: center;
+  width: 30%;
 }
 
 #bioContent {
-	width: 70%;
+  width: 70%;
 }
-
+#main div{
+	display:inline-block;
+}
 @media only screen and (max-width: 1000px) {
-	td {
-		display: inline-block;
-		width: 100% !important;
-	}
-	
-	#bioImg img {
-		max-height:15em !important;
-	}
-	#bioContent{
-		text-align:center;
-	}
+  td {
+    display: inline-block;
+    width: 100% !important;
+  }
+
+  #bioImg img {
+    max-height: 15em !important;
+  }
+
+  #bioContent {
+    text-align: center;
+  }
 }
