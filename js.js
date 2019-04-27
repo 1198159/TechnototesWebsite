@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 let blogInfo = "null";
 
-let alert = false;
+let alert = true;
 
 fetch("https://oroarmor.github.io/blog/blogIndex.json")
 .then(function(a) {
@@ -33,12 +33,12 @@ fetch("https://oroarmor.github.io/blog/blogIndex.json")
     }
     a.text().then(function(a) {
     	blogInfo = a;
-    	if(alert){
+    	//if(alert){
     	alert("json time");
     	
         alert(blogInfo);
-        alert(blogInfo.json());
-    	}
+//        alert(blogInfo.json());
+    	//}
     });
 })
 .catch(function(a) {

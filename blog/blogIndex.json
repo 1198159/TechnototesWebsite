@@ -3,7 +3,7 @@
     {
       'title': 'My First Blog, 4/24/19',
       'images': [],
-      'text': '/blog/blogText/blog4.24.19/txt',
+      'text': './blog/blogText/blog4.24.19/txt',
       'date':'4 24 19'
     }
   ]
