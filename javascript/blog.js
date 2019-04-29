@@ -41,5 +41,8 @@ let showBlog = (container, info, what) => {
   }).then(blogText => {
     let pTag = $("p").clone().text(blogText);
     $(container).append(pTag);
+  }).catch(err =>{
+	   let pTag = $("p").clone().text("Error finding data");
+    $(container).append(pTag);
   });
 };
