@@ -153,6 +153,7 @@ li .aNo:visited {
 .content {
   background-color: #777777;
   padding: 5px;
+  margin:5px;
 }
 
 .contentHeader {
@@ -164,10 +165,7 @@ li .aNo:visited {
 }
 
 .content p {
-  display: inline-block;
 }
-
-.noShow {}
 
 /* End of Body*/
 /* Media stuff */

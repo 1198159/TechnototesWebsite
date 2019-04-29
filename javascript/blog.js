@@ -1,36 +1,11 @@
-let hidden = false;
+let blogs;
 
-$(document).ready(function() {
-  $(".dropdownItem:not(#hideDrop)").click(function() {
-    let href = $(this).children("a").attr('href');
-
-    location.replace($(this).children("a").attr('href'));
-  });
-
-  $('#hideDrop').click(function() {
-    $('.dropdownItem:not(#hideDrop)').css("display", (hidden) ? "initial" : "none");
-    $("#downImg").attr("src", "arrow" + ((hidden) ? "" : "Down") + ".png");
-    $("#dropdown").toggleClass("dropdownUp");
-    hidden = !hidden;
-  });
-
-  $(window).resize(function() {
-    if ($(window).width() > 1000) {
-      $('.dropdownItem:not(#hideDrop)').css("display", "inline");
-    }
-  });
-});
-
-let blogInfo = "null";
-
-let alert = true;
 
 fetch('./blog/blogIndex.json').then(response => {
   return response.json();
 }).then(data => {
   // Work with JSON data here
-  blogInfo = data;
-  showBlog("#blogContent", blogInfo, "new");
+  blogs = data;
 }).catch(err => {
   console.log(err);
 });
@@ -38,6 +13,12 @@ fetch('./blog/blogIndex.json').then(response => {
 let showBlog = (container, info, what) => {
   let blog;
 
+  if(what == null){
+	  what = info;
+	  info = blogs;
+  }
+  
+  
   if (what == "new") {
     let newestDate = new Date(1970);
     let newestBlog = -1;
@@ -46,6 +27,7 @@ let showBlog = (container, info, what) => {
       if (blogDate - newestDate > 0) {
         newestBlog = infoBlog;
       }
+      let newestDate = blogDate;
     }
     blog = info.blogs[newestBlog];
   }
