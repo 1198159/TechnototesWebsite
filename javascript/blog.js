@@ -1,7 +1,11 @@
 let blogs;
 
+$(function(){
+	showBlog("#blogContent","new");
+});
 
-fetch('./blog/blogIndex.json').then(response => {
+
+fetch("https://oroarmor.github.io/blog/blogIndex.json").then(response => {
   return response.json();
 }).then(data => {
   // Work with JSON data here
@@ -12,37 +16,36 @@ fetch('./blog/blogIndex.json').then(response => {
 
 let showBlog = (container, info, what) => {
   let blog;
-
   if(what == null){
 	  what = info;
 	  info = blogs;
   }
-  
-  
   if (what == "new") {
     let newestDate = new Date(1970);
     let newestBlog = -1;
     for (let infoBlog in info.blogs) {
-      let blogDate = new Date(info.blogs[infoBlog].date);
-      if (blogDate - newestDate > 0) {
+    	let blogDate = new Date(info.blogs[infoBlog].date);
+   	if (blogDate - newestDate > 0) {
         newestBlog = infoBlog;
+        newestDate = blogDate;
       }
-      let newestDate = blogDate;
     }
     blog = info.blogs[newestBlog];
   }
 
   let blogDiv = $(container);
-  blogDiv.append($("h3").clone().text(blog.title));
+  let tempDiv = $("<div></div>").clone();
+  tempDiv.append($("<h4></h4>").clone().text(blog.title));
   fetch(blog.text).then(response => {
     return response.text();
   }).then(data => {
     return data;
   }).then(blogText => {
-    let pTag = $("p").clone().text(blogText);
-    $(container).append(pTag);
+    let pTag = $("<p></p>").clone().text(blogText);
+    tempDiv.append(pTag);
   }).catch(err =>{
-	   let pTag = $("p").clone().text("Error finding data");
-    $(container).append(pTag);
+	   let pTag = $("<p></p>").clone().text("Error finding data");
+	   tempDiv.append(pTag);
   });
+  blogDiv.append(tempDiv);
 };

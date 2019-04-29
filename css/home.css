@@ -23,7 +23,7 @@
 }
 
 #notSide {
-	flex-grow:2;
+	flex-grow:3;
 	display: inline-flex;
 	flex-direction: column;
 }
