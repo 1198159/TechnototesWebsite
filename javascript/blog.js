@@ -1,25 +1,32 @@
 let blogs;
 let blogObjs;
 
-fetch("https://oroarmor.github.io/blog/blogIndex.json").then(response => {
+fetch("./blog/blogIndex.json")
+  .then(response => {
     return response.json();
-  }).then(data => {
-    blogs = data.blogs;
-  }).then(() => {
-	
-	 
+  })
+  .then(data => {blogs = data.blogs;})
+  .then(() => {
 	blogObjs=[];
 	for(blog in blogs){
 		blogObjs.push(new Blog(blogs[blog]));
 	}  
-	 blogObjs[0].addBlogTo("#main", {
-	 class: "content"
-	 });
-	 blogObjs[1].addBlogTo("#blogContent", {id:"newestBlog"});
-	  })
-	  .catch(err => {
-	    alert(err);
-});
+	blogObjs[0].addBlogTo("#main", {class: "content"});
+	blogObjs[1].addBlogTo("#blogContent", {id:"newestBlog"});
+  })
+  .catch(err => {alert(err);});
+
+//function getNewestBlogs(blogArray, numberOfBlogs){
+//	
+//	let returnBlogs = [];
+//	let returnDates = [];
+//	
+//	for(int i = 0; i < numberOfBlogs; i++){
+//		returnDates = new Date(1970);
+//	}
+//}
+
+
 
 class Blog {
   constructor(jsonData) {
@@ -28,6 +35,7 @@ class Blog {
     this.title = jsonData.title;
     this.txtFilePath = jsonData.text;
     this.images = jsonData.images;
+    this.date = new Date(jsonData.date);
   }
 
   async getText(textPath) {
