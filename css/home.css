@@ -1,29 +1,56 @@
+#info{
+	display:flex;
+	align-items:stretch;
+}
+
 #bioImg img {
-  max-height: 10em;
+	max-height: 10em;
 }
 
 #bioImg {
-  text-align: center;
-  width: 30%;
+	text-align: center;
+	flex-growth:5;
 }
 
 #bioContent {
-  width: 70%;
+	flex-growth:7;
 }
-#main div{
-	display:inline-block;
+
+#belowBio {
+	display: inline-flex;
+	width:100%;
+	align-items:stretch;
+	flex-direction:row;
+	flex-wrap:row wrap;
 }
+
+#notSide {
+	flex-grow:3;
+	display: inline-flex;
+	flex-direction: column;
+}
+#blogContent{
+	flex-grow:1;
+}
+#blogContent h3{
+	text-align:center;
+}
+
 @media only screen and (max-width: 1000px) {
-  td {
-    display: inline-block;
-    width: 100% !important;
-  }
-
-  #bioImg img {
-    max-height: 15em !important;
-  }
-
-  #bioContent {
-    text-align: center;
-  }
+	td {
+		display: inline-block;
+		width: 100% !important;
+	}
+	#bioImg img {
+		max-height: 15em !important;
+	}
+	#bioContent {
+		text-align: center;
+	}
+	#belowBio{
+		flex-direction:column;
+	}
+	#info{
+		flex-direction:column;
+	}
 }
