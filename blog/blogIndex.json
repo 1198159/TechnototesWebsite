@@ -2,13 +2,13 @@
   "blogs": [{
     "title": "My First Blog, 4/24/19",
     "images": [],
-    "text": "./blog/blogTexts/blog4.24.19.txt",
+    "text": "https://oroarmor.github.io/blog/blogTexts/blog4.24.19.txt",
     "date": "April 24, 2019 00:00:00",
     "id":0
   },{
     "title": "My Second Blog, 4/27/19",
     "images": [],
-    "text": "./blog/blogTexts/blog4.27.19.txt",
+    "text": "https://oroarmor.github.io/blog/blogTexts/blog4.27.19.txt",
     "date": "April 27, 2019 00:00:00",
     "id":1
   }]

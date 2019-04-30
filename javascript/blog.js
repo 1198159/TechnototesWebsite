@@ -1,20 +1,24 @@
 let blogs;
+let blogObjs;
 
-fetch("./blog/blogIndex.json").then(response => {
+fetch("https://oroarmor.github.io/blog/blogIndex.json").then(response => {
     return response.json();
   }).then(data => {
-    blogs = data;
+    blogs = data.blogs;
   }).then(() => {
-    let testBlog = new Blog(blogs.blogs[0]);
-    testBlog.addBlogTo("#main", {
-      class: "content"
-    });
-
-		let testBlog2 = new Blog(blogs.blogs[1]);
-    testBlog2.addBlogTo("#blogContent", {id:"newestBlog"});
-  })
-  .catch(err => {
-    console.log(err);
+	
+	 
+	blogObjs=[];
+	for(blog in blogs){
+		blogObjs.push(new Blog(blogs[blog]));
+	}  
+	 blogObjs[0].addBlogTo("#main", {
+	 class: "content"
+	 });
+	 blogObjs[1].addBlogTo("#blogContent", {id:"newestBlog"});
+	  })
+	  .catch(err => {
+	    alert(err);
 });
 
 class Blog {
