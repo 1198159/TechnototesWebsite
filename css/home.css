@@ -1,17 +1,19 @@
+#info{
+	display:flex;
+	align-items:stretch;
+}
+
 #bioImg img {
 	max-height: 10em;
 }
 
 #bioImg {
 	text-align: center;
-	width: 30%;
+	flex-growth:5;
 }
 
 #bioContent {
-	width: 70%;
-}
-
-#main div {
+	flex-growth:7;
 }
 
 #belowBio {
@@ -46,6 +48,9 @@
 		text-align: center;
 	}
 	#belowBio{
+		flex-direction:column;
+	}
+	#info{
 		flex-direction:column;
 	}
 }

@@ -73,8 +73,10 @@ li .aNo:visited {
   #dropdown {
     padding-top: 0px;
     flex-direction: column;
-    height: 11em;
+    height: 11.1em;
     justify-content: flex-start;
+    padding:0px;
+    align-content:stretch;
   }
 
   .dropdownUp {
@@ -107,18 +109,11 @@ li .aNo:visited {
 }
 
 @media screen and (max-width:1000px) {
-  .dropdownItem:not(#currentTab) {
+  .dropdownItem{
     position: relative;
     right: 1em;
-    width: 100%;
     text-align: center;
-  }
-
-  #currentTab {
-    position: relative;
-    right: 1em;
-    width: 100%;
-    text-align: center;
+    width:99.5%;
   }
 
   #hideDrop {

@@ -10,7 +10,10 @@ fetch("https://oroarmor.github.io/blog/blogIndex.json").then(response => {
 }).then(data => {
   // Work with JSON data here
   blogs = data;
-}).catch(err => {
+}).then({
+	alert(blogs.blogs[0].title);
+})
+.catch(err => {
   console.log(err);
 });
 
@@ -49,3 +52,33 @@ let showBlog = (container, info, what) => {
   });
   blogDiv.append(tempDiv);
 };
+
+
+//let testBlog = new Blog(blogs.blogs[0]);
+
+class Blog{
+	
+	constructor(jsonData){
+		alert("start");
+		
+		this.id = jsonData.id;
+		this.json = jsonData;
+		this.title = jsonData.title;
+		this.txtFilePath = jsonData.text;
+		this.images = jsonData.images;
+		this.text = getText(this.txtFilePath);
+		
+		alert(this.text);
+	}
+	
+	getText(textPath){
+		return fetch(textPath)
+		.then(response => {
+		    return response.text();
+		  }).then(data => {
+		    return data;
+		  }).catch(err => {
+			  return "not found";
+		  });
+	}
+}
