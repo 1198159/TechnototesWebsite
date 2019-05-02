@@ -14,17 +14,21 @@ fetch("./blog/blogIndex.json")
 	blogObjs[0].addBlogTo("#main", {class: "content"});
 	blogObjs[1].addBlogTo("#blogContent", {id:"newestBlog"});
   })
-  .catch(err => {alert(err);});
+  .catch(
+		  err => {
+//			  alert(err);
+			  }
+		);
 
-//function getNewestBlogs(blogArray, numberOfBlogs){
+// function getNewestBlogs(blogArray, numberOfBlogs){
 //	
-//	let returnBlogs = [];
-//	let returnDates = [];
+// let returnBlogs = [];
+// let returnDates = [];
 //	
-//	for(int i = 0; i < numberOfBlogs; i++){
-//		returnDates = new Date(1970);
-//	}
-//}
+// for(int i = 0; i < numberOfBlogs; i++){
+// returnDates = new Date(1970);
+// }
+// }
 
 
 

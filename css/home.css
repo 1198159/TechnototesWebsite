@@ -1,6 +1,6 @@
-#info{
-	display:flex;
-	align-items:stretch;
+#info {
+	display: flex;
+	align-items: stretch;
 }
 
 #bioImg img {
@@ -9,34 +9,37 @@
 
 #bioImg {
 	text-align: center;
-	flex-growth:5;
+	flex-growth: 5;
 }
 
 #bioContent {
-	flex-growth:7;
+	flex-growth: 7;
 }
 
 #belowBio {
 	display: inline-flex;
-	width:100%;
-	align-items:stretch;
-	flex-direction:row;
-	flex-wrap:row wrap;
+	width: 100%;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: row wrap;
 }
 
 #notSide {
-	flex-grow:3;
+	flex: 7;
 	display: inline-flex;
 	flex-direction: column;
 }
-#blogContent{
-	flex-grow:1;
-}
-#blogContent h3{
-	text-align:center;
+
+#blogContent {
+	flex: 3;
 }
 
-@media only screen and (max-width: 1000px) {
+#blogContent h3 {
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
 	td {
 		display: inline-block;
 		width: 100% !important;
@@ -47,10 +50,16 @@
 	#bioContent {
 		text-align: center;
 	}
-	#belowBio{
-		flex-direction:column;
+	#belowBio {
+		flex-direction: column;
 	}
-	#info{
-		flex-direction:column;
+	#info {
+		flex-direction: column;
+	}
+	#notSide{
+		text-align:center;
+	}
+	.indent{
+		text-indent:0em !important;
 	}
 }

@@ -7,6 +7,10 @@ body {
   font-size: 1em;
 }
 
+.indent{
+	text-indent:2em;
+}
+
 /* Start of Header*/
 .header {
   background: #363639;
@@ -69,7 +73,7 @@ li .aNo:visited {
   justify-content: space-evenly;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:600px) {
   #dropdown {
     padding-top: 0px;
     flex-direction: column;
@@ -108,7 +112,7 @@ li .aNo:visited {
   height: 1.3em;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:600px) {
   .dropdownItem{
     position: relative;
     right: 1em;
