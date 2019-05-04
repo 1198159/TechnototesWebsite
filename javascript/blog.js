@@ -11,26 +11,16 @@ fetch("./blog/blogIndex.json")
 	for(blog in blogs){
 		blogObjs.push(new Blog(blogs[blog]));
 	}  
-	blogObjs[0].addBlogTo("#main", {class: "content"});
-	blogObjs[1].addBlogTo("#blogContent", {id:"newestBlog"});
+	
+	for(var i = 0; i < blogObjs.length; i++){
+		blogObjs[i].addBlogTo("#blogContent", {class:"blog"});
+	}
   })
   .catch(
 		  err => {
-//			  alert(err);
+			  alert(err);
 			  }
 		);
-
-// function getNewestBlogs(blogArray, numberOfBlogs){
-//	
-// let returnBlogs = [];
-// let returnDates = [];
-//	
-// for(int i = 0; i < numberOfBlogs; i++){
-// returnDates = new Date(1970);
-// }
-// }
-
-
 
 class Blog {
   constructor(jsonData) {
