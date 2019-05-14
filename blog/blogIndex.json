@@ -2,13 +2,13 @@
   "blogs": [{
     "title": "Hello World, 5/13/19",
     "images": [],
-    "text": "./blog/blogTexts/blog4.24.19.txt",
+    "text": "./blog/blogTexts/blog1.txt",
     "date": "May 13, 2019 00:00:00",
     "id":0
   },{
     "title": "Hope You Enjoy the Site, 5/13/19",
     "images": [],
-    "text": "./blog/blogTexts/blog4.27.19.txt",
+    "text": "./blog/blogTexts/blog2.txt",
     "date": "May 13, 2019 00:00:00",
     "id":1
   }]
