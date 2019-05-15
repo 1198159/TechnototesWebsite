@@ -150,7 +150,7 @@ li .aNo:visited {
 }
 
 .content {
-  background-color: #777777;
+  background-color: rgba(119, 119, 119, .4);
   padding: 5px;
   margin:5px;
 }
