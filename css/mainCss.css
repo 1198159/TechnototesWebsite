@@ -3,7 +3,7 @@ body {
   color: black;
   width: 100%
   margin: 0;
-  border: 20px solid #999999;
+  border: 5px solid #000000;
   padding: 0;
   font-family: arial;
   font-size: 1em;
@@ -148,6 +148,7 @@ li .aNo:visited {
 #main {
   margin: 10px;
   padding: 10px;
+  height: 100px;
   background-color: #999999;
 }
 
