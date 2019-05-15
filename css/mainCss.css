@@ -96,11 +96,11 @@ li .aNo:visited {
 }
 
 .dropdownItem:hover {
-  background: #2f4d99;
+  background: #990000;
 }
 
 #currentTab {
-  background-color: #2f4d99;
+  background-color: #990000;
   height: 1.3em;
 }
 
