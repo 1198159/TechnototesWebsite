@@ -148,14 +148,14 @@ li .aNo:visited {
   margin: 10px;
   padding: 10px;
   height: 100px;
-  border: 3px solid #999999;
+  border: 5px solid #999999;
   background-color: #777777;
 }
 
 .content {
   position: absolute;
   left: 50px;
-  top: 300px;
+  top: 275px;
   width: 500px;
   border: 3px solid #999999;
   background-color: #777777;
