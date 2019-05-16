@@ -161,9 +161,17 @@ li .aNo:visited {
   border: 3px solid #999999;
   background-color: #777777;
   padding: 5px;
-  margin:5px;
+  margin: 5px;
 }
-
+.content2 {
+  position: absolute;
+  height: 60px;
+  border: 3px solid #999999;
+  background-color: #777777;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
 .contentHeader {
   padding: 0;
   padding-bottom: 5px;
