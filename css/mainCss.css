@@ -94,7 +94,8 @@ li .aNo:visited {
   background: black;
   padding: 10px;
   height: 1.25em;
-  width: 5em;
+  width: 15em;
+  text-align:center;
 }
 
 .dropdownItem:hover {
