@@ -147,9 +147,10 @@ li .aNo:visited {
 /* End of Header*/
 /* Start of Body*/
 #main {
-  margin: 10px;
-  padding: 1px;
+  margin: 0px;
+  padding: 0px;
   height: 80px;
+  width: 100%
   border: 5px solid #999999;
   background-color: #777777;
   text-align:center;
