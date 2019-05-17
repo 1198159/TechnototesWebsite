@@ -181,6 +181,7 @@ li .aNo:visited {
   padding: 10px;
 
   height: 1.25em;
+  width: 15em;
 
 }
 
@@ -199,6 +200,7 @@ li .aNo:visited {
   background-color: #990000;
 
   height: 1.3em;
+  width: 15em;
 
 }
 
@@ -215,6 +217,7 @@ li .aNo:visited {
 #hideDrop img {
 
   height: 1.3em;
+  width: 15em;
 
 }
 
