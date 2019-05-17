@@ -1,17 +1,11 @@
 body {
-
-  background: #dddddd;
-
+  background:black url(https://1198159.github.io/images/galaxy.jpg);
   color: black;
-
+  width: 100%;
   margin: 0;
-
   padding: 0;
-
   font-family: arial;
-
   font-size: 1em;
-
 }
 
 
@@ -118,7 +112,7 @@ li .aNo:visited {
 
   height: 2em+ 20px;
 
-  border-bottom: 10px solid #2f4d99;
+  border-bottom: 10px solid #990000;
 
   display: block;
 
@@ -194,7 +188,7 @@ li .aNo:visited {
 
 .dropdownItem:hover {
 
-  background: #2f4d99;
+  background: #990000;
 
 }
 
@@ -202,7 +196,7 @@ li .aNo:visited {
 
 #currentTab {
 
-  background-color: #2f4d99;
+  background-color: #990000;
 
   height: 1.3em;
 
@@ -294,7 +288,8 @@ li .aNo:visited {
 
   padding: 5px;
 
-  background-color: #999999;
+  background-color: #777777;
+  border: 5px solid #999999;
 
 }
 
@@ -306,7 +301,8 @@ li .aNo:visited {
 
   padding: 5px;
 
-  margin:5px;
+  margin: 5px;
+  border: 5px solid #999999;
 
 }
 
