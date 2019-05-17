@@ -1,190 +1,341 @@
 body {
-  background:black url(https://1198159.github.io/images/galaxy.jpg);
+
+  background: #dddddd;
+
   color: black;
-  width: 100%;
+
   margin: 0;
+
   padding: 0;
+
   font-family: arial;
+
   font-size: 1em;
+
 }
+
+
 
 .indent{
+
 	text-indent:2em;
+
 }
+
+
 
 /* Start of Header*/
+
 .header {
+
   background: #363639;
+
   width: 100%;
+
   top: -1.5em;
+
   padding: 0px;
+
   padding-bottom: 0px;
+
   padding-top: 20px;
+
 }
+
+
 
 .header h1 {
+
   margin: 0;
+
   padding: 0;
+
 }
+
+
 
 a {
+
   color: #555555;
+
   text-decoration: none;
+
   font-weight: bold;
+
 }
+
+
 
 a:visited {
+
   color: #555555;
+
 }
+
+
 
 .aNo {
+
   color: initial;
+
   text-decoration: none;
+
 }
+
+
 
 .aNo:visited {
+
   color: initial;
+
 }
+
+
 
 li .aNo {
+
   color: white;
+
 }
+
+
 
 li .aNo:visited {
+
   color: white;
+
 }
+
+
 
 /*nav menu Start*/
+
 #dropdownMenu {
+
   width: 100%;
+
   background-color: black;
+
   height: 2em+ 20px;
-  border-bottom: 10px solid #990000;
+
+  border-bottom: 10px solid #2f4d99;
+
   display: block;
+
 }
+
+
 
 #dropdown {
+
   list-style: none;
+
   padding: 10px;
+
   padding-top: 4px;
+
   height: 1.5em;
+
   padding-bottom: 0px;
+
   width: 100%;
+
   display: flex;
+
   justify-content: space-evenly;
+
 }
 
+
+
 @media screen and (max-width:600px) {
+
   #dropdown {
-    padding-top: 10px;
+
+    padding-top: 0px;
+
     flex-direction: column;
+
     height: 11.1em;
+
     justify-content: flex-start;
+
     padding:0px;
+
     align-content:stretch;
+
   }
+
+
 
   .dropdownUp {
+
     height: 1.5em !important;
+
     background: green;
+
   }
+
 }
+
+
 
 .dropdownItem {
+
   background: black;
+
   padding: 10px;
+
   height: 1.25em;
-  width: 15em;
-  text-align:center;
+
 }
+
+
 
 .dropdownItem:hover {
-  background: #990000;
+
+  background: #2f4d99;
+
 }
+
+
 
 #currentTab {
-  background-color: #990000;
+
+  background-color: #2f4d99;
+
   height: 1.3em;
+
 }
+
+
 
 #hideDrop {
+
   display: none;
+
 }
+
+
 
 #hideDrop img {
+
   height: 1.3em;
+
 }
+
+
 
 @media screen and (max-width:600px) {
+
   .dropdownItem{
+
     position: relative;
+
     right: 1em;
+
     text-align: center;
+
     width:99.5%;
+
   }
+
+
 
   #hideDrop {
+
     display: inline;
+
   }
+
 }
+
+
 
 /*nav menu end*/
+
 #menuIcon {
+
   height: 2em;
+
   position: relative;
+
   top: -2.1em;
+
   margin-right: 10px;
+
 }
+
+
 
 #title {
+
   text-align: center;
+
 }
+
+
 
 #title a {
+
   color: white;
+
 }
+
+
 
 /* End of Header*/
+
 /* Start of Body*/
+
 #main {
+
   margin: 10px;
-  padding: 10px;
-  height: 80px;
-  width: 100%
-  border: 5px solid #999999;
-  background-color: #777777;
-  text-align:center;
+
+  padding: 5px;
+
+  background-color: #999999;
+
 }
+
+
 
 .content {
-  position: absolute;
-  left: 10px;
-  top: 240px;
-  width: 500px;
-  border: 3px solid #999999;
+
   background-color: #777777;
+
   padding: 5px;
-  margin: 5px;
+
+  margin:5px;
+
 }
-.content2 {
-  position: relative;
-  top: 0px;
-  height: 60px;
-  width: 1180px;
-  vertical-align: middle;
-  text-align:center;
-}
+
+
+
 .contentHeader {
+
   padding: 0;
+
   padding-bottom: 5px;
+
   line-spacing: 0;
+
   margin: 0;
+
   line-spacing: 0;
+
   text-align:center;
+
 }
+
+
 
 .content p {
+
 }
 
+
+
 /* End of Body*/
+
 /* Media stuff */
