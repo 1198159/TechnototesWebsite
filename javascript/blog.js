@@ -6,7 +6,7 @@ let blogObjs;
 
 whenLoaded = () => {
 
-  fetch("https://1198159.github.io/blog/blogIndex.json")
+  fetch("./blog/blogIndex.json")
 
     .then(response => {
 
