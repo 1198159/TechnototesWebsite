@@ -1,0 +1,33 @@
+#blogImageDiv {
+
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: stretch;
+
+  padding: 10px;
+
+}
+
+
+
+.blogImage {
+
+  width: 30%;
+
+  height: 30%;
+
+  margin: auto;
+
+}
+
+
+
+#blog{
+
+	display:flex;
+
+	align-items:stretch;
+
+}
