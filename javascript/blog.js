@@ -31,7 +31,7 @@ whenLoaded = () => {
         }
 
         if (!found) {
-          $("#blogs").append("<p>The requested blog was not found</p>");
+          $("#blogs").append("<p>The requested post was not found</p>");
           $("#prev").css("display", "none");
           $("#next").css("display", "none");
         }else{
@@ -58,7 +58,7 @@ whenLoaded = () => {
       console.log("Finished");
     })
     .catch(err => {
-      let errorMessage = "Failed to get blogs. " + err;
+      let errorMessage = "Failed to get Posts. " + err;
       $("#main").append("<p>" + errorMessage + "</p>");
     });
 };
