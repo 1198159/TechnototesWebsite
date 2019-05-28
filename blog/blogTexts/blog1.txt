@@ -1,1 +1,3 @@
 Welcome to this website.
+You can navigate between posts by clicking on the Previous Post and Next Post text at the bottom of the page.
+This section hosts rules and other things about the site, so I would read it if I were you.
