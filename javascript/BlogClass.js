@@ -3,7 +3,7 @@ class Blog {
     this.id = jsonData.id;
     this.json = jsonData;
     this.title = jsonData.title;
-    this.txtFilePath = jsonData.text;
+    this.txtFilePath = "hello \n hello \n hello";
     this.images = jsonData.images;
     this.date = new Date(jsonData.date);
   }
