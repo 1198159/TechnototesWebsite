@@ -2,7 +2,7 @@ let blogs;
 let blogObjs;
 
 whenLoaded = () => {
-  fetch("https://oroarmor.github.io/blog/blogIndex.json")
+  fetch("https://1198159.github.io/blog/blogIndex.json")
     .then(response => {
       return response.json();
     })
