@@ -1,15 +1,27 @@
 {
   "blogs": [{
-    "title": "Welome, 5/27/19",
+    "title": "Welcome, 5/27/19",
     "images": [],
     "text": "https://1198159.github.io/blog/blogTexts/blog1.txt",
     "date": "May 27, 2019 00:00:00",
     "id":0
   },{
-    "title": "Hope You Enjoy the Site, 5/27/19",
+    "title": "Site Overview, 5/27/19",
     "images": [],
     "text": "https://1198159.github.io/blog/blogTexts/blog2.txt",
     "date": "May 27, 2019 00:00:00",
     "id":1
+  },{
+    "title": "Rules, 5/27/19",
+    "images": [],
+    "text": "https://1198159.github.io/blog/blogTexts/blog3.txt",
+    "date": "May 27, 2019 00:00:00",
+    "id":2
+   },{
+    "title": "Game Requests, 5/27/19",
+    "images": [],
+    "text": "https://1198159.github.io/blog/blogTexts/blog4.txt",
+    "date": "May 27, 2019 00:00:00",
+    "id":3
   }]
 }
