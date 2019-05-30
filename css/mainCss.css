@@ -272,7 +272,12 @@ li .aNo:visited {
 
 }
 
+#title2 {
 
+  text-align: left;
+  left: 20px;
+
+}
 
 #title a {
 
