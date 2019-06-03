@@ -3,7 +3,7 @@
   "name": "test server",
   "ip": "10.52.102.27",
   "version": "1.13.2",
-  "description": "Just a test Server, nothing special"
-
+  "description": "Just a test Server, nothing special",
+  "ststus": "offline"
   }]
 }
