@@ -37,7 +37,7 @@
 
    $.getJSON('./server/server.json', function(data) {
        $.each(data.server, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.ip + "</td>" + "<td>" + f.version + "</td>" + "<td>" + f.desc + "</td>" + "</tr>"
+          var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.ip + "</td>" + "<td>" + f.version + "</td>" + "<td>" + f.description + "</td>" + "</tr>"
            $(tblRow).appendTo("#serverdata tbody");
      });
 
@@ -67,9 +67,6 @@
        </tbody>
    </table>
 				</p>
-			</div>
-			<div id="bioImg">
-				<img src="./images/icon.png" />
 			</div>
 		</div>
 	
