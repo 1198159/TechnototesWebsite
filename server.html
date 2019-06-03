@@ -28,7 +28,23 @@
 			</ul>
 		</div>
 	</div>
+	<script>
 
+    $(function() {
+
+
+   var server = [];
+
+   $.getJSON('./server/server.json', function(data) {
+       $.each(data.server, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.ip + "</td>" + "<td>" + f.version + "</td>" + "<td>" + f.desc + "</td>" + "</tr>"
+           $(tblRow).appendTo("#serverdata tbody");
+     });
+
+   });
+
+});
+</script>
 	<div id="main">
 		<div id="yeet" class="main">
 			<p><b><font size="10", color=#3D3C3A>Server</font></b></p>
@@ -38,6 +54,18 @@
 			<div id="bioContent">
 				<h3 class="contentHeader">My Minecraft Server</h3>
 				<p>
+				<table id= "serverdata" border="2">
+  <thead>
+	  <th>Name:</th>
+            <th>IP:</th>
+            <th>Version:</th>
+            <th>Description:</th>
+          
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
 				</p>
 			</div>
 			<div id="bioImg">
