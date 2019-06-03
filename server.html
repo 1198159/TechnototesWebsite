@@ -37,12 +37,20 @@
 
    $.getJSON('./server/server.json', function(data) {
        $.each(data.server, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.ip + "</td>" + "<td>" + f.version + "</td>" + "<td>" + f.description + "</td>"  + "<td>" + f.status + "</td>" + "</tr>"
+          var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.ip + "</td>" + "<td>" + f.version + "</td>" + "<td>" + f.description + "</td>"  + "<td><span id='status'>" + f.status + "</span></td>" + "</tr>"
            $(tblRow).appendTo("#serverdata tbody");
      });
 
    });
-
+   $.ajax({
+	   url: '10.52.102.27',
+	   success: function(result) {
+		alert("success");
+	   },
+	   error: function(result) {
+		   alert("error");
+	   }
+   });
 });
 </script>
 	<div id="main">
