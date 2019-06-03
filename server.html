@@ -42,39 +42,28 @@
      });
 
    });
- $.ajax({
+ function isValidURL(url) {
+    var encodedURL = encodeURIComponent(url);
+    var isValid = false;
 
+    $.ajax({
+      url: "https://1198159.github.io/",
+      type: "get",
+      async: false,
+      dataType: "json",
+      success: function(data) {
+        isValid = data.query.results != null;
+      },
+      error: function(){
+        isValid = false;
+      }
+    });
 
- 
-	   url: 'https://10.52.102.27:25565',
+    alert('isValid');
+}
 
+  }
 
- 
-	   success: function(result) {
-
-
- 
-		alert("success");
-
-
- 
-	   },
-
-
- 
-	   error: function(result) {
-
-
- 
-		   alert("error");
-
-
- 
-	   }
-
-
- 
-   });
 });
 </script>
 	<div id="main">
