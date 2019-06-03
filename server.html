@@ -42,22 +42,39 @@
      });
 
    });
-   url = "1198159.github.io/home.html"
-ping = new XMLHttpRequest();    
-ping.onreadystatechange = function(){
+ $.ajax({
 
-    document.body.innerHTML += "</br>" + ping.readyState;
 
-    if(ping.readyState == 4){
-        if(ping.status == 200){
-            result = ping.getAllResponseHeaders();
-            document.body.innerHTML += "</br>" + result + "</br>";
-        }
-    }
+ 
+	   url: 'https://10.52.102.27:25565',
 
-}
-ping.open("GET", url, true);    
-ping.send();
+
+ 
+	   success: function(result) {
+
+
+ 
+		alert("success");
+
+
+ 
+	   },
+
+
+ 
+	   error: function(result) {
+
+
+ 
+		   alert("error");
+
+
+ 
+	   }
+
+
+ 
+   });
 });
 </script>
 	<div id="main">
