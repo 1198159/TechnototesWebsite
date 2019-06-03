@@ -31,41 +31,22 @@
 	<script>
  
     $(function() {
-	     function isValidURL(url) {
-    var encodedURL = encodeURIComponent(url);
-    var isValid = false;
-
-    $.ajax({
-      url: "https://1198159.github.io/",
-      type: "get",
-      async: false,
-      dataType: "json",
-      success: function(data) {
-        isValid = data.query.results != null;
-      },
-      error: function(){
-        isValid = false;
-      }
-    });
-
-    return isValid;
-}
-
-  }
-	    
-
-
    var server = [];
-
    $.getJSON('./server/server.json', function(data) {
        $.each(data.server, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.ip + "</td>" + "<td>" + f.version + "</td>" + "<td>" + f.description + "</td>"  + "<td>" + isValid + "</span></td>" + "</tr>"
+          var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.ip + "</td>" + "<td>" + f.version + "</td>" + "<td>" + f.description + "</td>"  + "<td><span id='status'>" + f.status + "</span></td>" + "</tr>"
            $(tblRow).appendTo("#serverdata tbody");
      });
-
    });
-
-
+   $.ajax({
+	   url: 'https://1198159.github.io/home.html',
+	   success: function(result) {
+		alert("success");
+	   },
+	   error: function(result) {
+		   alert("error");
+	   }
+   });
 });
 </script>
 	<div id="main">
