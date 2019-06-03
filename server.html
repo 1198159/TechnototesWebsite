@@ -29,20 +29,9 @@
 		</div>
 	</div>
 	<script>
-
+ 
     $(function() {
-
-
-   var server = [];
-
-   $.getJSON('./server/server.json', function(data) {
-       $.each(data.server, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.ip + "</td>" + "<td>" + f.version + "</td>" + "<td>" + f.description + "</td>"  + "<td><span id='status'>" + f.status + "</span></td>" + "</tr>"
-           $(tblRow).appendTo("#serverdata tbody");
-     });
-
-   });
- function isValidURL(url) {
+	     function isValidURL(url) {
     var encodedURL = encodeURIComponent(url);
     var isValid = false;
 
@@ -59,10 +48,23 @@
       }
     });
 
-    alert('isValid');
+    return isValid;
 }
 
   }
+	    
+
+
+   var server = [];
+
+   $.getJSON('./server/server.json', function(data) {
+       $.each(data.server, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.ip + "</td>" + "<td>" + f.version + "</td>" + "<td>" + f.description + "</td>"  + "<td>" + isValid + "</span></td>" + "</tr>"
+           $(tblRow).appendTo("#serverdata tbody");
+     });
+
+   });
+
 
 });
 </script>
