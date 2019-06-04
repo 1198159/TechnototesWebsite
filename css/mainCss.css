@@ -184,7 +184,7 @@ li .aNo:visited {
 
   background: black;
 
-  padding: 10px;
+  padding-top: 10px;
 
   height: 1.25em;
   width: 10em;
@@ -300,7 +300,7 @@ li .aNo:visited {
 
   /*margin: 10px;
   padding: 5px;*/
-  height: 2em+ 20px;
+  height: 2em;
   height: 80px;
   width: 100%;
   text-align: center;
