@@ -119,7 +119,7 @@ li .aNo:visited {
   border-bottom: 10px solid #990000;
 
   display: block;
-  padding-bottom: 0px;
+  padding-bottom: -20px;
 
 }
 
