@@ -296,13 +296,13 @@ li .aNo:visited {
 
 #main {
 
-  margin: 10px;
-
-  padding: 5px;
+  /*margin: 10px;
+  padding: 5px;*/
   height: 80px;
+  width: 100%;
   text-align: center;
   background-color: #777777;
-  border: 5px solid #999999;
+  /*border: 5px solid #999999;*/
 
 }
 
