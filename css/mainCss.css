@@ -119,6 +119,7 @@ li .aNo:visited {
   border-bottom: 10px solid #990000;
 
   display: block;
+  padding-bottom: 0px;
 
 }
 
@@ -159,6 +160,7 @@ li .aNo:visited {
     justify-content: flex-start;
 
     padding:0px;
+    padding-bottom: 0px;
 
     align-content:stretch;
 
@@ -298,6 +300,7 @@ li .aNo:visited {
 
   /*margin: 10px;
   padding: 5px;*/
+  padding-top: 0px;
   height: 80px;
   width: 100%;
   text-align: center;
