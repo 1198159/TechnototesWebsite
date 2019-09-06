@@ -1,8 +1,8 @@
 body {
     background-image: url(https://1198159.github.io/images/galaxy2.jpg);
-    background-repeat:repeat-x;
+    background-repeat:no-repeat;
     background-attachment:fixed;
-    background-position: left top;
+    background-position: center;
     position:absolute;
     height:100%;
     width:100%;
