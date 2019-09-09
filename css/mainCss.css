@@ -114,7 +114,7 @@ li .aNo:visited {
 
   background-color: black;	
 
-  height: 3em;
+  height: 3em+10px;
 
   border-bottom: 10px solid #990000;
 
@@ -183,7 +183,7 @@ li .aNo:visited {
 
   padding: 10px;
 
-  height: 1.25em;
+  height: 1.3em;
   width: 18%;
   text-align: center;
 }
