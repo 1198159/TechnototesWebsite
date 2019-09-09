@@ -202,7 +202,7 @@ li .aNo:visited {
 
   background-color: #990000;
 
-  height: 15%;
+  height: 100%;
   width: 18%;
   text-align: center;
 
@@ -220,7 +220,7 @@ li .aNo:visited {
 
 #hideDrop img {
 
-  height: 1.3em;
+  height: 10%em;
   width: 10em;
   text-align: center;
 }
