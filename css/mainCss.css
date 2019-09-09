@@ -128,7 +128,6 @@ li .aNo:visited {
 
   list-style: none;
 
-  padding: 10px;
 
   padding-top: 4px;
 
@@ -154,7 +153,7 @@ li .aNo:visited {
 
     flex-direction: column;
 
-    height: 15%;
+    height: 10%;
 
     justify-content: flex-start;
 
@@ -168,7 +167,7 @@ li .aNo:visited {
 
   .dropdownUp {
 
-    height: 12% !important;
+    height: 10% !important;
 
     background: green;
 
