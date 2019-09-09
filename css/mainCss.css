@@ -114,7 +114,7 @@ li .aNo:visited {
 
   background-color: black;	
 
-  height: 3.00001em;
+  height: 3em+100px;
 
   border-bottom: 10px solid #990000;
 
