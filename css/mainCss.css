@@ -114,7 +114,7 @@ li .aNo:visited {
 
   background-color: black;
 
-  height: 2em+ 20px;
+  height: 20%;
 
   border-bottom: 10px solid #990000;
 
@@ -132,7 +132,7 @@ li .aNo:visited {
 
   padding-top: 4px;
 
-  height: 1.5em;
+  height: 12%;
 
   padding-bottom: 0px;
 
@@ -168,7 +168,7 @@ li .aNo:visited {
 
   .dropdownUp {
 
-    height: 1.5em !important;
+    height: 12% !important;
 
     background: green;
 
@@ -184,7 +184,7 @@ li .aNo:visited {
 
   padding: 10px;
 
-  height: 5%;
+  height: 10%;
   width: 18%;
   text-align: center;
 }
@@ -203,7 +203,7 @@ li .aNo:visited {
 
   background-color: #990000;
 
-  height: 5%;
+  height: 10%;
   width: 18%;
   text-align: center;
 
