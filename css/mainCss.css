@@ -368,11 +368,13 @@ color: #bbbbbb;
 #footer {
 
 
-  background-color: #555555;
+  background-color: black;
+  
+  color: #bbbbbb;
 
   padding: 5px;
 
-  border-top: black 5px solid;
+  border-top: #990000 7px solid;
 
 }
 
