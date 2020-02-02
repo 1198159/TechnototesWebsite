@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://1198159.github.io/images/wallpaper.jpg);
+    background-image: url(../images/wallpaper.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position: center;
@@ -9,9 +9,13 @@ body {
     margin:0;
     padding:0;
     font-family: arial;
-    font-size: 1em;
-}
+    font-size: 1.3em;
 
+
+}
+body, .bingkai, ul {
+  margin:0;padding:0;
+}
 
 
 .indent{
@@ -26,17 +30,19 @@ body {
 
 .header {
 
-  background: #363639;
+  background: black;
 
   width: 100%;
 
-  top: -1em;
+  top: -2em;
 
   padding: 0px;
 
   padding-bottom: 0px;
 
   padding-top: 10px;
+  
+  margin-bottom: 0px;
 
 }
 
@@ -74,34 +80,34 @@ a:visited {
 
 .aNo {
 
-  color: initial;
 
   text-decoration: none;
 
 }
 
-
+.aNo:hover {
+  color: #aaaaaa;
+}
 
 .aNo:visited {
 
-  color: initial;
 
 }
 
 
 
 li .aNo {
-
-  color: white;
-
+	color: #dddddd;
 }
 
 
 
 li .aNo:visited {
 
-  color: white;
+}
 
+li .aNo:hover {
+color: #bbbbbb;
 }
 
 
@@ -114,9 +120,9 @@ li .aNo:visited {
 
   background-color: black;	
 
-  height: 3em+ 4px;
+  height: 47px;
 
-  border-bottom: 10px solid #990000;
+  border-bottom: 7px solid #990000;
 
   display: block;
 
@@ -128,14 +134,10 @@ li .aNo:visited {
 
   list-style: none;
 
+  height: 1.25em;
 
-  padding-top: 4px;
 
-  height: 1.5em;
-
-  padding-bottom: 0px;
-
-  width: 100%;
+ 
 
   display: flex;
 
@@ -152,6 +154,7 @@ li .aNo:visited {
     padding-top: 0px;
 
     flex-direction: column;
+    
 
     height: 1.5em;
 
@@ -184,7 +187,7 @@ li .aNo:visited {
   padding: 10px;
 
   height: 1.3em;
-  width: 18%;
+  width: 15%;
   text-align: center;
 }
 
@@ -192,8 +195,8 @@ li .aNo:visited {
 
 .dropdownItem:hover {
 
-  background: #990000;
-
+ 	background: rgb(90,0,0);
+	
 }
 
 
@@ -203,7 +206,6 @@ li .aNo:visited {
   background-color: #990000;
 
   height: 1.3em;
-  width: 18%;
   text-align: center;
 
 }
@@ -325,6 +327,7 @@ li .aNo:visited {
   border: 5px solid #999999;
 
 }
+
 .content3 {
   height: 55px;
   background-color: #777777;
@@ -348,16 +351,56 @@ li .aNo:visited {
 
   text-align:center;
 
+  color: #333333;
+  	
+
 }
 
+.contentHeader:hover{
+  color: #555555;
+}
 
 
 .content p {
 
 }
 
+#footer {
 
+
+  background-color: #555555;
+
+  padding: 5px;
+
+  border-top: black 5px solid;
+
+}
 
 /* End of Body*/
 
 /* Media stuff */
+.bingkai, ul {
+  
+}
+
+.bingkai {
+  height: 500px;
+}
+
+.bingkai ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+
+.bingkai li {
+  list-style: none;
+  width: 100%;
+  padding: 70px;
+  font-size: 25px;
+  color: white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-shadow: 1px 3px 6px rgba(0,0,0,.5);
+}

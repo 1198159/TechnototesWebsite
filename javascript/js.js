@@ -1,6 +1,7 @@
 let hidden = false;
 
 $(document).ready(function() {
+	 $('.carousel').carousel({interval: 7000});
   $(".dropdownItem:not(#hideDrop)").click(function() {
     location.replace($(this).children("a").attr('href'));
   });
